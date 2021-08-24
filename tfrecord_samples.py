@@ -220,21 +220,13 @@ def _parse_function(example_proto):
 
 
 
-
-
-
-
 parsed_dataset = raw_dataset.map(_parse_function)
 parsed_dataset
 
 
 
-
-
 for parsed_record in parsed_dataset.take(10):
   print(repr(parsed_record))
-
-
 
 
 
